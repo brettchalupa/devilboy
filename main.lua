@@ -15,7 +15,7 @@ Player = require("player")
 
 
 function _config()
-  return { name = "DEVILBOY", game_id = "com.brettmakesgames.devilboy" }
+  return { name = "DEVILBOY", game_id = "com.brettmakesgames.devilboy", icon = 1 }
 end
 
 function _init()

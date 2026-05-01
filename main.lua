@@ -1,11 +1,18 @@
-local Player = require "player"
-
+SPR = {
+  PLAYER_RUN_1 = 1,
+  PLAYER_RUN_2 = 2,
+  BULLET = 3,
+}
 GRAVITY = 25
 DIR = {
-  EAST = "EAST",
-  WEST = "WEST",
+  EAST = 1,
+  WEST = -1,
+  NONE = 0,
 }
 SPR_SIZE = 16
+Bullet = require("bullet")
+Player = require("player")
+
 
 function _config()
   return { name = "DEVILBOY", game_id = "com.brettmakesgames.devilboy" }
@@ -23,7 +30,7 @@ end
 
 function _draw(dt)
   gfx.clear(gfx.COLOR_INDIGO)
-  gfx.text("Hello, DEVILBOY!", 10, 10, gfx.COLOR_WHITE)
+  gfx.text("DEVILBOY!", 260, 10, gfx.COLOR_WHITE)
 
   Player.draw(state.p)
 end

@@ -6,7 +6,6 @@ DIR = {
   WEST = "WEST",
 }
 SPR_SIZE = 16
-local state
 
 function _config()
   return { name = "DEVILBOY", game_id = "com.brettmakesgames.devilboy" }
